@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <link rel="shortcut icon" type="image/png" href="http://static.tumblr.com/3gn3box/QrZni94g9/favicon.png"/>
+    <style type="text/css">
+        body{
+            background:white;
+            width:100%;
+            margin:0;
+            font-family:Tahoma;
+            overflow:hidden;
+        }
+        
+        header{
+            background:#fff000;
+            width:100%;
+            height:328px;
+        }
+        
+        htext{
+            size:14px;
+        }
+        
+        hleft, hright, hly, hry{
+            width:50%;
+            height:2px;
+            position:absolute;
+        }
+        hleft, hright{
+            background:black;
+        }
+        hly, hry{
+            background:#fff000;
+        }
+        hleft, hly{
+            top:163px;
+        }
+        hright, hry{
+            top:162px;
+        }
+        
+        hly{
+            left:-25px;
+            -webkit-animation: load_hly 1s linear; 
+            animation: load_hly 1s linear;
+            z-index:10;
+        }
+        hleft{
+            left:-100%;
+            -webkit-animation: load_hleft 1s linear; 
+            animation: load_hleft 1s linear;
+            z-index:5;
+        }
+        
+        @keyframes load_hleft {
+            0% { left: -25px; }
+            30% { left: -25px; }
+            100% { left: -100%; }
+        }
+        
+        @-webkit-keyframes load_hleft {
+            0% { left: -25px; }
+            30% { left: -25px; }
+            100% { left: -100%; }
+        }
+        
+        @keyframes load_hly {
+            0% { left: -25px; }
+            50% { left: -100%; }
+            100% { left: -100%; }
+        }
+        
+        @-webkit-keyframes load_hly {
+            0% { left: -25px; }
+            50% { left: -100%; }
+            100% { left: -100%; }
+        }
+        
+        hry{
+            right:-24px;
+            -webkit-animation: load_hry 1s linear; 
+            animation: load_hry 1s linear;
+            z-index:10;
+        }
+        hright{
+            right:-100%;
+            -webkit-animation: load_hright 1s linear; 
+            animation: load_hright 1s linear;
+            z-index:5;
+        }
+        
+        @keyframes load_hright {
+            0% { right: -24px; }
+            30% { right: -24px; }
+            100% { right: -100%; }
+        }
+        
+        @-webkit-keyframes load_hright {
+            0% { right: -24px; }
+            30% { right: -24px; }
+            100% { right: -100%; }
+        }
+        
+        @keyframes load_hry {
+            0% { right: -24px; }
+            50% { right: -100%; }
+            100% { right: -100%; }
+        }
+        
+        @-webkit-keyframes load_hry {
+            0% { right: -24px; }
+            50% { right: -100%; }
+            100% { right: -100%; }
+        }
+        
+        p{
+            size:12px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+        <img src="http://static.tumblr.com/3gn3box/EjIni93vd/logo.png"/><br>
+        <htext><strong>Student, Programmer, Web and graphic designer</strong></htext>
+        </center>
+        <hleft></hleft> <hly></hly>
+        <hright></hright> <hry></hry>
+    </header>
+</body>
+</html>
