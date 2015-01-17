@@ -227,10 +227,8 @@ $(this).next(".extended").slideToggle('fast');
             display:block;
         }
         
-        #boxtitle{
-            width:500px;
+        #boxtitle, #paneltitle{
             font-size:18px;
-            color:#fff000;
             line-height:12px;
             text-align:center;
             position:relative;
@@ -238,10 +236,17 @@ $(this).next(".extended").slideToggle('fast');
             margin:0 auto;
         }
         
-        #box{
+        #boxtitle{
             width:500px;
-            padding:20px;
-            background:#fff000;
+            color:#fff000;
+        }
+        
+        #paneltitle{
+            width:100%;
+            color:white;
+        }
+        
+        #box, #panel{
             font-size:12px;
             text-align:center;
             position:relative;
@@ -250,8 +255,22 @@ $(this).next(".extended").slideToggle('fast');
             margin-bottom:50px;
         }
         
-        p{
-            size:12px;
+        #box{
+            padding:20px;
+            width:500px;
+            background:#fff000;
+        }
+        
+        #panel{
+            padding:20px 0;
+            width:100%;
+            background:white;
+        }
+        
+        #panel p{
+            width:520px;
+            padding:0;
+            margin:0 auto;
         }
         
     </style>
@@ -301,11 +320,13 @@ $(this).next(".extended").slideToggle('fast');
         <div id="box">
             My name is <strong>Vanja Veselinovic</strong> and I am a software engineering student at Carleton University. I am passionate about unique and creative applications of programming, blurring the borders between code and art.
         </div>
-        <div id="boxtitle">
-            <strong>about</strong>
+        <div id="paneltitle">
+            <strong>work</strong>
         </div>
-        <div id="box">
+        <div id="panel">
+            <p>
             My name is <strong>Vanja Veselinovic</strong> and I am a software engineering student at Carleton University. I am passionate about unique and creative applications of programming, blurring the borders between code and art.
+            </p>
         </div>
         <div id="boxtitle">
             <strong>about</strong>
