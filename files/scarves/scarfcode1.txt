@@ -1,0 +1,58 @@
+/* SCARFCODE1 BEGINS */
+
+scarves{
+    width: 200px;
+    display:block;
+    position:absolute;
+    margin:0 auto;
+    left:250px;
+    z-index:9999;       
+}
+        
+scarf1, scarf2, scarf3, scarf4{
+    width:25px;
+    height:150px;
+    position:absolute;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+        
+scarf1{
+    margin-left:0;
+    margin-top:-100px;
+}
+        
+scarf1:hover{
+    margin-top:-65px;
+}
+        
+scarf2{
+    margin-left:30px;
+    margin-top:-80px;
+}
+        
+scarf2:hover{
+    margin-top:-45px;
+}
+        
+scarf3{
+    margin-left:60px;
+    margin-top:-100px;
+}
+        
+scarf3:hover{
+    margin-top:-65px;
+}
+        
+scarf4{
+    margin-left:90px;
+    margin-top:-120px;
+}
+        
+scarf4:hover{
+    margin-top:-85px;
+}
+        
+/* SCARFCODE1 ENDS */

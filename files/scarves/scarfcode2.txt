@@ -1,0 +1,8 @@
+<!-- SCARFCODE2 BEGINS -->
+<scarves>
+    <scarf1><img src="http://url1" title="hover text"></scarf1>
+    <scarf2><img src="http://url2" title="hover text"></scarf2>
+    <scarf3><img src="http://url3" title="hover text"></scarf3>
+    <scarf4><img src="http://url4" title="hover text"></scarf4>
+</scarves>
+<!-- SCARFCODE2 ENDS -->
