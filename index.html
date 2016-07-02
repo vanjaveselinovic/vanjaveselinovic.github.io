@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         
     <script type="text/javascript"> 
@@ -59,7 +58,7 @@
             opacity:0;
         }
         
-        topbar{
+        #topbar{
             padding-top:34px;
             width:100%;
             height:100px;
@@ -74,7 +73,7 @@
                     transition:background 1s;
         }
         
-        topbardark{
+        #topbardark{
             padding-top:34px;
             width:100%;
             height:100px;
@@ -89,7 +88,7 @@
                     transition:opacity 0.5s;
         }
         
-        topbar:hover + topbardark {
+        #topbar:hover + #topbardark {
             opacity:1;
             -webkit-transition:opacity 0.5s;
                -moz-transition:opacity 0.5s;
@@ -97,7 +96,7 @@
                     transition:opacity 0.5s;
         }
         
-        topbar a{
+        #topbar a{
             margin-right:36px;
             font-family:Tahoma;
             color:white;
@@ -108,17 +107,17 @@
                     transition:color 0.2s;
         }
         
-        topbar a:hover{
+        #topbar a:hover{
             color:#fff000;
         }
         
-        .main{
+        #main{
             position:relative;
             display:block;
             height:100%;
         }
         
-        .bg{
+        #bg{
             width:100%;
             height:100%;
             margin:0;
@@ -127,7 +126,7 @@
             position:absolute;
         }
         
-        .container{
+        #container{
             display: table-cell;
             vertical-align: middle;
             position:relative
@@ -135,7 +134,7 @@
             height:100%;
         }
         
-        .header{
+        #header{
             width:100%;
             height:352px;
             overflow:hidden;
@@ -302,7 +301,7 @@
             display:block;
         }
         
-        #boxtitle, #paneltitle{
+        .boxtitle, .paneltitle{
             font-size:18px;
             position:relative;
             display:block;
@@ -310,7 +309,7 @@
             height:100px;
         }
         
-        #boxtitle ttext, #paneltitle ttext{
+        .boxtitle ttext, .paneltitle ttext{
             height:30px;
             position:relative;
             top:83px;
@@ -318,47 +317,48 @@
             margin: 0 auto;
         }
         
-        #boxtitle{
+        .boxtitle{
             width:500px;
             color:#fff000;
         }
         
-        #paneltitle{
+        .paneltitle{
             width:100%;
             color:white;
         }
         
-        #box, #panel, #footer{
+        .box, .panel, #footer{
             text-align:center;
             position:relative;
             display:block;
             margin:0 auto;
         }
         
-        #box{
+        .box{
             padding:20px;
             width:500px;
             background:#fff000;
             font-size:12px;
         }
-        #box a{
+		
+        .box a{
             color:#0e90fd;
             font-weight:bold;
             text-decoration:none;
         }
         
-        #box a:hover{
+        .box a:hover{
             color:black;
         }
         
-        #panel{
+        .panel{
             padding:20px 0;
             width:100%;
             background:white;
             font-size:12px;
         }
         
-        #panel p{
+        .panel p{
             width:520px;
             padding:0;
             margin:0 auto;
@@ -474,7 +474,7 @@
         
         /* SCARFCODE1 ENDS */
         
-        panel a{
+        .panel a{
             z-index:1;
         }
         
@@ -554,7 +554,7 @@
 
 <body>
     
-    <topbar>
+    <div id="topbar">
         <a href="#home"><div id="logo"></div></a>
         <strong>
         <a href="#home">home</a>
@@ -564,8 +564,8 @@
         <a href="#contact">contact</a>
         <a href="#copyright">©</a>
         </strong>
-    </topbar>
-    <topbardark></topbardark>
+    </div>
+    <div id="topbardark"></div>
     
     <div class="main">
     
@@ -595,10 +595,10 @@
             <div id="scrollcontainer"><div id="scrollarrow"></div></div>
         </a>
         <a id="about"></a>
-        <div id="boxtitle">
+        <div class="boxtitle">
             <center><ttext><strong>about</strong></ttext></center>
         </div>
-        <div id="box">
+        <div class="box">
             My name is <strong>Vanja Veselinovic</strong> and I am a software engineering student at Carleton University. I am passionate about unique and creative applications of programming, blurring the borders between code and art.<br><br>I am knowledgeable in the following languages:<br>
             <div class="langimg">
             <img src="/images/i_html.png"/>
@@ -612,10 +612,10 @@
             and always looking to learn more.
         </div>
 		<a id="work"></a>
-		<div id="paneltitle">
+		<div class="paneltitle">
 			<center><ttext><strong>work experience</strong></ttext></center>
 		</div>
-		<div id="panel">
+		<div class="panel">
 			<p class="worktitle">
 				<strong>Web Developer · </strong>January-August 2015
 				<br>
@@ -660,11 +660,11 @@
 			</p>
 		</div>
         <a id="projects"></a>
-        <div id="paneltitle">
+        <div class="paneltitle">
             <center><ttext><strong>projects</strong></ttext></center>
         </div>
-        <div id="panel">
-			<img class = "workimg" src="/images/work2.png"/>
+        <div class="panel">
+			<img class="workimg" src="/images/work2.png"/>
             <br>
             <p class="worktitle"><strong>
                 road line painter
@@ -767,10 +767,10 @@
             <img class = "workimg" src="/images/workx.png"/>
         </div>
         <a id="contact"></a>
-        <div id="boxtitle">
+        <div class="boxtitle">
             <center><ttext><strong>contact</strong></ttext></center>
         </div>
-        <div id="box">
+        <div class="box">
             <a href="mailto:vanja.veselinovic.95@gmail.com">vanja.veselinovic.95@gmail.com</a> | <a href="http://ca.linkedin.com/pub/vanja-veselinovic/a6/648/2b9">LinkedIn</a> | <a href="https://github.com/vanjaveselinovic">GitHub</a>
         </div>
         <a id="copyright"></id>
