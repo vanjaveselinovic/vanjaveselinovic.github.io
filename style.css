@@ -21,6 +21,7 @@ body {
     top: 0;
     position: fixed;
     z-index: -1;
+    font-size: 1.6em;
 }
 
 @keyframes particle {
@@ -48,7 +49,8 @@ body {
 }
 
 #masthead {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 800px;
     margin: 0 auto;
     margin-top: -400px;
@@ -56,7 +58,8 @@ body {
 
 #title-section {
     text-align: center;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
     margin-top: -250px;
 }
@@ -70,103 +73,6 @@ body {
     font-size: 0.8em;
     text-transform: uppercase;
     color: #FF7559;
-}
-
-#main {
-    position: relative;
-    display: block;
-    height: 100%;
-}
-
-#bg {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    font-family: Tahoma;
-    display: table;
-    position: absolute;
-}
-
-#container {
-    display: table-cell;
-    vertical-align: middle;
-    position: relative
-    width: 100%;
-    height: 100%;
-}
-
-#logo {
-    position: fixed;
-    width: 231px;
-    height: 50px;
-    top: 6px;
-    left: 0;
-    background: url("images/logo_h_white.png") no-repeat;
-    text-align: left;
-    line-height: 12px;
-    display: none;
-    transition: display, background 0.2s;
-    overflow: show;
-    white-space: nowrap;
-    z-index: 400;
-}
-
-#logo:hover {
-    background: url("images/logo_h_white_yellow_accent.png") no-repeat;
-}
-
-#logoimg {
-    width: 100px;
-    height: 328px;
-    position: relative;
-    background: url("images/logo_white.png"); 
-    display: block;
-    z-index: 200;
-    margin: 0 auto;
-    transition: background 0.2s;
-}
-
-#logoimg:hover {
-    background: url("images/logo_white_yellow_accent.png");
-}
-
-#htext {
-	width: 100%;
-	height: 300px;
-    font-size: 10px;
-    color: white;
-	text-align: center;
-	position: absolute;
-	z-index: 250;
-	top: 270px;
-    font-weight: bold;
-}
-
-#scrollcontainer {
-    top: -70px;
-    opacity: 1;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    margin: 0 auto;
-    display: block;
-    transition: opacity 1s;
-}
-#scrollarrow {
-    width: 50px;
-    height: 50px;
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    background: url("images/scroll_arrow.png");
-    -webkit-animation: pulse 2s infinite; 
-    animation: pulse 2s infinite;
-}
-
-@-webkit-keyframes pulse {
-    0% { opacity: 0.5; }
-    50% { opacity: 1; }
-    100% { opacity: 0.5; }
 }
 
 #page {
@@ -193,7 +99,8 @@ body {
 }
 
 .boxtitle {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     color: #fff000;
 }
 
@@ -211,7 +118,8 @@ body {
 
 .box {
     padding: 20px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     background: #fff000;
     font-size: 12px;
 }
@@ -234,7 +142,8 @@ body {
 }
 
 .panel p {
-    width: 520px;
+    width: 100%;
+    max-width: 520px;
     padding: 0;
     margin: 0 auto;
 }
@@ -272,7 +181,8 @@ line {
 
 exampletop {
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: 65px;
     position: relative;
     display: block;
@@ -281,7 +191,8 @@ exampletop {
 
 scarfcontainer {
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: 250px;
     position: relative;
     display: block;
@@ -376,7 +287,8 @@ downloads {
 }
 
 instructions {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     max-height: 0px;
     display: block;
     position: relative;
@@ -409,7 +321,8 @@ sgallery {
 
 .pwide {
     text-align: left;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     margin: 0 auto;
 	margin-bottom: 30px;
 }
