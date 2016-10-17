@@ -1,44 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        
-    <script type="text/javascript"> 
-        $(document).ready(function(){ 
-        $(".extended").hide(); 
-        $(".extend").click(function(){ 
-        $(this).next(".extended").slideToggle('fast'; 
-        }); });
-    </script>
-    
-    <script>
-    	$(function() {
-    	  $('a[href*=#]:not([href=#])').click(function() {
-    	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-    
-    	      var target = $(this.hash);
-    	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    	      if (target.length) {
-    	        $('html,body').animate({
-    	          scrollTop: target.offset().top
-    	        }, 1000);
-    	        return false;
-    	      }
-    	    }
-    	  });
-    	});
-	</script>
-
+    <meta charset="utf-8">
     <title>Vanja Veselinovic</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
     
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    
 </head>
 
 <body>
-    
     <div id="topbar">
         <a href="#home"><div id="logo"></div></a>
         <strong>
@@ -54,24 +29,18 @@
     
     <div id="main">
     
-    <a id="home"></a>
-    
-    <div id="bg">
-    <div id="container">
-    
-    <div id="header">
-        <div id="logoimg"></div>
+        <a id="home"></a>
         
-        <hleft> <hlline></hlline> </hleft>
-        <hright> <hrline></hrline> </hright>
-		
-		<htext><strong>
-		    Student · Programmer · Web and Graphic Designer
-		</strong></htext>
-    </div>
-    
-    </div>
-    </div>
+        <div id="bg">
+            <div id="container">
+                <div id="header">
+                    <div id="logoimg"></div>
+            		<div id="htext">
+            		    Student · Programmer · Web and Graphic Designer
+            		</div>
+                </div>
+            </div>
+        </div>
     
     </div>
     
@@ -81,7 +50,7 @@
         </a>
         <a id="about"></a>
         <div class="boxtitle">
-            <center><ttext><strong>about</strong></ttext></center>
+            <div class="ttext">about</div>
         </div>
         <div class="box">
             My name is <strong>Vanja Veselinovic</strong> and I am a software engineering student at Carleton University. I am passionate about unique and creative applications of programming, blurring the borders between code and art.<br><br>I am knowledgeable in the following languages:<br>
@@ -98,7 +67,7 @@
         </div>
 		<a id="work"></a>
 		<div class="paneltitle">
-			<center><ttext><strong>work experience</strong></ttext></center>
+			<div class="ttext">work experience</div>
 		</div>
 		<div class="panel">
 			<p class="worktitle">
@@ -146,7 +115,7 @@
 		</div>
         <a id="projects"></a>
         <div class="paneltitle">
-            <center><ttext><strong>projects</strong></ttext></center>
+            <div class="ttext">projects</div>
         </div>
         <div class="panel">
 			<img class="workimg" src="images/work2.png"/>
@@ -190,7 +159,7 @@
             <downloads>
             <p style="margin-top:-90px;">
                 Downloads<br>
-                <a class="dbutton" href="/files/scarves/scarfcode1.txt">CSS</a> <a class="dbutton" href="/files/scarves/scarfcode2.txt">HTML</a> <a class="dbutton2">Instructions ▾</a>
+                <a class="dbutton" href="files/scarves/scarfcode1.txt">CSS</a> <a class="dbutton" href="files/scarves/scarfcode2.txt">HTML</a> <a class="dbutton2">Instructions ▾</a>
             </p>
             </downloads>
             <instructions>
@@ -253,7 +222,7 @@
         </div>
         <a id="contact"></a>
         <div class="boxtitle">
-            <center><ttext><strong>contact</strong></ttext></center>
+            <div class="ttext">contact</div>
         </div>
         <div class="box">
             <a href="mailto:vanja.veselinovic.95@gmail.com">vanja.veselinovic.95@gmail.com</a> | <a href="http://ca.linkedin.com/pub/vanja-veselinovic/a6/648/2b9">LinkedIn</a> | <a href="https://github.com/vanjaveselinovic">GitHub</a>
@@ -264,42 +233,6 @@
         </div>
         
     </div>
-
-    <script>
-        $(document).scroll(function () {
-            var y = $(this).scrollTop();
-            if (y > 70) {
-                $("#scrollcontainer").css({"opacity":"0"});
-            } else {
-                $("#scrollcontainer").css({"opacity":"1"});
-            }
-            if (y > 285) {
-                $("#logo").fadeIn("fast");
-                $(".header").fadeOut("slow");
-            } else {
-                $("#logo").fadeOut("fast");
-                $(".header").fadeIn("slow");
-            }
-        });
-        
-        $(".dbutton2").hover(function() {
-            $('.dbutton2').css({"cursor":"pointer"});
-        });
-        
-        $(".dbutton2").click(function() {
-            var o = false;
-            if ($("instructions").css("max-height")=="0px"){
-                $("instructions").css({"max-height":"10000px"});
-                $(".dbutton2").text("Instructions ▴");
-                o = true;
-            }
-            else{
-               $("instructions").css({"max-height":"0px","content":"'Instructions ▾"});
-               $(".dbutton2").text("Instructions ▾");
-                o = false;
-            }
-        });
-    </script>
     
     <imgload>
         <img src="images/logo_white_yellow_accent.png"/>
