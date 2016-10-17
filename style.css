@@ -14,6 +14,29 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+#particle-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+@keyframes particle {
+    from { margin-top: 0; }
+    to { margin-top: 2000px; }
+}
+
+.particle {
+    position: absolute;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    animation-name: particle;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
 #header {
     width: 100%;
 }
@@ -28,7 +51,6 @@ body {
     height: 800px;
     margin: 0 auto;
     margin-top: -400px;
-    background: rgba(255,0,0,0.5);
 }
 
 #title-section {
@@ -46,47 +68,6 @@ body {
 #title-section h3 {
     font-size: 0.8em;
     text-transform: uppercase;
-}
-
-#topbar {
-    padding-top: 34px;
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    background: url("images/topbar_shadow.png") repeat-x;
-    text-align: right;
-    size: 18px;
-    z-index: 300;
-    transition: background 1s;
-}
-
-#topbardark {
-    padding-top: 34px;
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    background: url("images/topbar_shadow_hover.png") repeat-x;
-    z-index: 290;
-    opacity: 0;
-    display: block;
-    transition: opacity 0.5s;
-}
-
-#topbar:hover + #topbardark {
-    opacity: 1;
-    transition: opacity 0.5s;
-}
-
-#topbar a {
-    margin-right: 36px;
-    font-family: Tahoma;
-    color: white;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-#topbar a:hover {
-    color: #fff000;
 }
 
 #main {
@@ -189,6 +170,7 @@ body {
 #page {
     position: relative;
     display: block;
+    opacity: 0;
 }
 
 .boxtitle, .paneltitle {

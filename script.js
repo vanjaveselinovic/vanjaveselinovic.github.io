@@ -1,4 +1,19 @@
 $(document).ready(function () {
+	var colors = ['#FF684A', '#00FFD0', '#FFD324'];
+	for (var i = 0; i < 20; i++) {
+		$('#particle-container').append('<div class="particle" style="top: '+Math.random()*100+'%; left: '+Math.random()*100+'%; color: '+colors[Math.floor(Math.random()*(3))]+';">V</div>');
+	}
+
+	window.setInterval(function(){
+		console.log($('#particle-container').height());
+  		$('.particle').each(function () {
+  			if ($(this).offset().top - $('#particle-container').offset().top > $('#particle-container').height()) {
+  				$(this).remove();
+  				$('#particle-container').append('<div class="particle" style="top: -'+Math.random()*100+'%; left: '+Math.random()*100+'%; color: '+colors[Math.floor(Math.random()*(3))]+';">V</div>');
+  			}
+  		});
+	}, 1000);
+
 	$('.extended').hide(); 
     $('.extend').click(function(){ 
     	$(this).next('.extended').slideToggle('fast');
