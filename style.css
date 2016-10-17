@@ -12,6 +12,7 @@ body {
     height: 100%;
     background: #eeeeee;
     font-family: 'Open Sans', sans-serif;
+    color: #444444;
 }
 
 #particle-container {
@@ -68,6 +69,7 @@ body {
 #title-section h3 {
     font-size: 0.8em;
     text-transform: uppercase;
+    color: #FF7559;
 }
 
 #main {
@@ -170,7 +172,6 @@ body {
 #page {
     position: relative;
     display: block;
-    opacity: 0;
 }
 
 .boxtitle, .paneltitle {
