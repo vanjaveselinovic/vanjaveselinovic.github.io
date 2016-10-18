@@ -102,12 +102,13 @@ a:hover {
 }
 
 .boxtitle, .paneltitle {
-    font-size: 1.2em;
+    font-size: 1.4em;
     position: relative;
     display: block;
     margin: 0 auto;
     height: 100px;
     line-height: 100px;
+    font-family: 'Quicksand';
 }
 
 .boxtitle .ttext, .paneltitle .ttext {
@@ -116,19 +117,15 @@ a:hover {
     display: block;
     margin: 0 auto;
     text-align: center;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 black;
 }
 
 .boxtitle {
     width: 100%;
     max-width: 500px;
-    color: #fff000;
 }
 
 .paneltitle {
     width: 100%;
-    color: white;
 }
 
 .box, .panel, #footer {
@@ -210,8 +207,6 @@ line {
     width: 50%;
     height: 50%;
     float: left;
-    background-size: cover;
-    background-position: center;
     position: relative;
 }
 
@@ -224,6 +219,16 @@ line {
     right: 0;
     position: absolute;
     transition: all 0.2s;
+}
+
+.website-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .website-logo {
@@ -240,11 +245,16 @@ line {
     transition: all 0.2s;
 }
 
+.website:hover .website-bg {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
 .website:hover::after, .website:hover .website-logo {
     opacity: 0;
 }
 
-.website:nth-child(1) {
+.website:nth-child(1) .website-bg {
     background-image: url("images/website-lander.png");
 }
 
@@ -256,7 +266,7 @@ line {
     background-image: url("images/website-lander-logo.png");
 }
 
-.website:nth-child(2) {
+.website:nth-child(2) .website-bg {
     background-image: url("images/website-xmlspecgen.png");
 }
 
@@ -268,7 +278,7 @@ line {
     background-image: url("images/website-xmlspecgen-logo.png");
 }
 
-.website:nth-child(3) {
+.website:nth-child(3) .website-bg {
     background-image: url("images/website-vanjav.png");
 }
 
@@ -280,7 +290,7 @@ line {
     background-image: url("images/website-vanjav-logo.png");
 }
 
-.website:nth-child(4) {
+.website:nth-child(4) .website-bg {
     background-image: url("images/website-korranews.png");
 }
 
