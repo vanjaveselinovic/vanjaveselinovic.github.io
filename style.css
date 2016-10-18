@@ -201,13 +201,15 @@ line {
 #websites {
     width: 100%;
     height: 80%;
+    position: relative;
 }
 
 .website {
     width: 50%;
     height: 50%;
     float: left;
-    position: relative;
+    position: absolute;
+    transition: all 0.3s;
 }
 
 .website::after {
@@ -245,6 +247,24 @@ line {
     transition: all 0.2s;
 }
 
+.website-note {
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background: #FF7559;
+    padding: 0.8em 1.2em;
+    color: #eee;
+    text-transform: uppercase;
+    font-family: "Quicksand";
+    font-weight: bold;
+}
+
+.website:hover {
+    cursor: pointer;
+}
+
 .website:hover .website-bg {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
@@ -252,6 +272,15 @@ line {
 
 .website:hover::after, .website:hover .website-logo {
     opacity: 0;
+}
+
+.website:hover .website-note {
+    opacity: 1;
+}
+
+.website:nth-child(1) {
+    top: 0;
+    left: 0;
 }
 
 .website:nth-child(1) .website-bg {
@@ -266,6 +295,11 @@ line {
     background-image: url("images/website-lander-logo.png");
 }
 
+.website:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
 .website:nth-child(2) .website-bg {
     background-image: url("images/website-xmlspecgen.png");
 }
@@ -276,6 +310,11 @@ line {
 
 .website:nth-child(2) .website-logo {
     background-image: url("images/website-xmlspecgen-logo.png");
+}
+
+.website:nth-child(3) {
+    bottom: 0;
+    left: 0;
 }
 
 .website:nth-child(3) .website-bg {
@@ -290,6 +329,11 @@ line {
     background-image: url("images/website-vanjav-logo.png");
 }
 
+.website:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
 .website:nth-child(4) .website-bg {
     background-image: url("images/website-korranews.png");
 }
@@ -300,6 +344,86 @@ line {
 
 .website:nth-child(4) .website-logo {
     background-image: url("images/website-korranews-logo.png");
+}
+
+.website-selected {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.website-selected:hover {
+    cursor: default;
+}
+
+.website-selected:hover .website-bg {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.website-selected .website-logo {
+    display: none;
+}
+
+.website-selected::after, .website-selected:hover::after {
+    background: #eee !important;
+    opacity: 1;
+}
+
+.website-selected:hover .website-logo {
+    opacity: 1;
+}
+
+.website-selected .website-note {
+    z-index: 3;
+}
+
+.website-more {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    padding: 40px;
+    pointer-events: none;
+}
+
+.website-selected .website-more {
+    pointer-events: initial;
+}
+
+.website-selected .website-more, .website-selected .website-note {
+    opacity: 1;
+}
+
+.wm-info {
+    width: 50%;
+}
+
+.wm-info-top {
+        text-align: center;
+}
+
+.wm-logo {
+    width: 200px;
+}
+
+.website-more h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
+}
+
+.website:nth-child(1) .website-more h2 {
+    margin-top: 0;
+}
+
+.website-more a {
+    color: #FF7559;
+}
+
+.website-more a:hover {
+
 }
 
 #apps {
@@ -534,5 +658,35 @@ sgallery {
     .website {
         width: 100%;
         height: 25%;
+    }
+
+    .website-logo {
+        width: 33%;
+    }
+
+    .website:nth-child(1) {
+        top: 0;
+        bottom: initial;
+    }
+
+    .website:nth-child(2) {
+        top: 25%;
+        bottom: initial;
+    }
+
+    .website:nth-child(3) {
+        top: 50%;
+        bottom: initial;
+    }
+
+    .website:nth-child(4) {
+        top: 75%;
+        bottom: initial;
+    }
+
+    .website-selected {
+        top: 0 !important;
+        bottom: 0 !important;
+        height: 100%;
     }
  }

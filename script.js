@@ -13,6 +13,10 @@ $(document).ready(function () {
   		});
 	}, 1000);
 
+	$('.website').click(function () {
+		$(this).addClass('website-selected');
+	});
+
 	$('.extended').hide(); 
     $('.extend').click(function(){ 
     	$(this).next('.extended').slideToggle('fast');
