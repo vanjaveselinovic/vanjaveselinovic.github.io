@@ -13,8 +13,8 @@ $(document).ready(function () {
   		});
 	}, 1000);
 
-	$('.website').click(function () {
-		$(this).addClass('website-selected');
+	$('.website:nth-child(1)').click(function () {
+		$('.website:nth-child(1)').addClass('website-selected');
 	});
 
 	$('.extended').hide(); 
