@@ -10,7 +10,7 @@ html, body {
 body {
     width: 100%;
     height: 100%;
-    background: #eeeeee;
+    background: #f6f6f6;
     font-family: 'Open Sans', sans-serif;
     color: #444444;
     position: absolute;
@@ -45,8 +45,8 @@ body {
 }
 
 #header-bg {
-    height: 400px;
-    background: #dddddd;
+    height: 250px;
+    background: white;
 }
 
 #masthead {
@@ -55,6 +55,10 @@ body {
     height: 800px;
     margin: 0 auto;
     margin-top: -400px;
+    background: url("images/masthead.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #title-section {
