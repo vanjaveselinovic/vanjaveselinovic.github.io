@@ -60,14 +60,11 @@ button:active {
 .github h2 {
     font-size: 1.4em !important;
     margin: 0;
+    font-family: "Quicksand", sans-serif;
 }
 
 .icon {
     fill: #FF7559;
-}
-
-#resume-button {
-    margin-bottom: 3em;
 }
 
 #particle-container {
@@ -205,35 +202,30 @@ button:active {
     margin: 0 auto;
 }
 
-.langimg {
-    margin-top: 4px;
-}
-
-.workimg {
-    padding: 70px;
-    margin-top: 50px;
-    margin-bottom: 15px;
-    border: 1px #cccccc solid;
-}
-
-.workimg: last-of-type {
+.pwide {
+    text-align: left;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
     margin-bottom: 30px;
+    display: none;
+}
+
+#resume-button {
+    margin-bottom: 3em;
+}
+
+.resume-expanded {
+    height: auto;
+}
+
+.resume-subtitle {
+    color: #FF7559;
 }
 
 .worktitle {
     font-size: 1.2em;
     color: gray;
-}
-
-line {
-    left: 0;
-    right: 0;
-    height: 1px;
-    position: relative;
-    margin-top: 3px;
-    margin-bottom: 5px;
-    display: block;
-    background: #cccccc;
 }
 
 #websites {
@@ -592,6 +584,8 @@ line {
     float: left;
     background-size: cover;
     background-position: center;
+    text-align: center;
+    position: relative;
 }
 
 .app:nth-child(1) {
@@ -602,6 +596,29 @@ line {
     background-image: url("images/app-tp.png");
 }
 
+.app-info {
+    position: absolute;
+    bottom: 67px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.app-info .icon {
+    fill: white;
+}
+
+.app-info a {
+    color: white;
+}
+
+.app-info a:hover .icon {
+    fill: #FF7559;
+}
+
+.app-info a:hover {
+    color: #FF7559;
+}
+
 #footer {
     padding: 10px 0;
     width: 100%;
@@ -609,23 +626,6 @@ line {
     font-size: 0.6em;
     color: #FF7559;
     margin-top: 50px;
-}
-
-.pwide {
-    text-align: left;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-	margin-bottom: 30px;
-    display: none;
-}
-
-.resume-expanded {
-    height: auto;
-}
-
-.resume-subtitle {
-    color: #FF7559;
 }
 
 #imgload {
