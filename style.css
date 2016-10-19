@@ -36,14 +36,15 @@ button {
     color: white;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
 }
 
 button:hover {
     background: #FF2B00;
 }
 
-button:focus {
-    box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+button:active {
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.2);
 }
 
 .github {
@@ -180,20 +181,16 @@ button:focus {
     padding: 20px;
     width: 100%;
     max-width: 500px;
-    background: #fff000;
     font-size: 0.75em;
+    border: 1px solid #00DEB4;
+    background: rgba(246, 246, 246, 0.83);
+    color: rgba(0,0,0,0.67);
 }
 
 .box a {
-    color: #0e90fd;
     font-weight: bold;
     text-decoration: none;
 }
-
-.box a:hover {
-    color: black;
-}
-
 .panel {
     padding: 20px 0;
     width: 100%;
@@ -203,7 +200,7 @@ button:focus {
 
 .panel p {
     width: 100%;
-    max-width: 520px;
+    max-width: 700px;
     padding: 0;
     margin: 0 auto;
 }
@@ -605,139 +602,12 @@ line {
     background-image: url("images/app-tp.png");
 }
 
-exampletop {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 800px;
-    height: 65px;
-    position: relative;
-    display: block;
-    background: url("images/example_top.png");
-}
-
-scarfcontainer {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 800px;
-    height: 250px;
-    position: relative;
-    display: block;
-    background: url("images/example.png") no-repeat;
-    overflow: hidden;
-}
-
-/* SCARFCODE1 BEGINS */
-
-scarves {
-    width: 200px;
-    display: block;
-    position: absolute;
-    margin: 0 auto;
-    left: 495px;
-    z-index: 10;
-
-}
-
-scarf1, scarf2, scarf3, scarf4 {
-    width: 25px;
-    height: 150px;
-    position: absolute;
-    transition: all 0.3s;
-}
-
-scarf1 {
-    margin-left: 0;
-    margin-top: -100px;
-}
-
-scarf1:hover {
-    margin-top: -65px;
-}
-
-scarf2 {
-    margin-left: 30px;
-    margin-top: -80px;
-}
-
-scarf2:hover {
-    margin-top: -45px;
-}
-
-scarf3 {
-    margin-left: 60px;
-    margin-top: -100px;
-}
-
-scarf3:hover {
-    margin-top: -65px;
-}
-
-scarf4 {
-    margin-left: 90px;
-    margin-top: -120px;
-}
-
-scarf4:hover {
-    margin-top: -85px;
-}
-
-/* SCARFCODE1 ENDS */
-
-downloads {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    z-index: 5;
-}
-
-.dbutton, .dbutton2 {
-    width: 90px;
-    display: inline-block;
-    font-weight: bold;
-    color: gray;
-    border: 1px #cccccc solid;
-    margin-top: 20px;
-    border-radius: 2px;
-    padding: 20px;
-    line-height: 14px;
-    transition: all 0.3;
-    
-}
-
-.dbutton:hover, .dbutton2:hover {
-    background: #dddddd;
-}
-
-instructions {
-    width: 100%;
-    max-width: 500px;
-    max-height: 0px;
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    text-align: left;
-    overflow: hidden;
-    transition: all 0.5;
-}
-
-itext {
-    padding: 20px;
-    display: block;
-}
-
-sgallery {
-    display: block;
-    height: 300px;
-    overflow-y: scroll;
-}
-
 #footer {
     padding: 10px 0;
     width: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.83);
     font-size: 0.6em;
-    color: white;
+    color: #FF7559;
     margin-top: 50px;
 }
 
