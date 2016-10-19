@@ -13,9 +13,14 @@ $(document).ready(function () {
   		});
 	}, 1000);
 
-	$('.website:nth-child(1)').click(function () {
-		$('.website:nth-child(1)').addClass('website-selected');
+	$('.website').click(function () {
+		$(this).addClass('website-selected');
 	});
+
+    $('.website-note').click(function (ev) {
+        ev.stopPropagation();
+        $('.website').removeClass('website-selected');
+    })
 
 	$('.extended').hide(); 
     $('.extend').click(function(){ 
