@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     $('#resume-button').click(function () {
         if (!resumeExpanded) {
-            $('#resume-button').text('- Hide Details');
+            $('#resume-button').text('— Hide Details');
             $('.pwide').addClass('resume-expanded').slideDown();
             resumeExpanded = true;
         }
