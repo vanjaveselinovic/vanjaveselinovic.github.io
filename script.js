@@ -13,13 +13,30 @@ $(document).ready(function () {
   		});
 	}, 1000);
 
+    var resumeExpanded = false;
+
+    $('#resume-button').click(function () {
+        if (!resumeExpanded) {
+            $('#resume-button').text('- Hide Details');
+            $('.pwide').addClass('resume-expanded').slideDown();
+            resumeExpanded = true;
+        }
+        else {
+            $('#resume-button').text('+ Show Details');
+            resumeExpanded = false;
+            $('.pwide').removeClass('resume-expanded').slideUp();
+        }
+    });
+
 	$('.website').click(function () {
 		$(this).addClass('website-selected');
+        $('.website-note').text('Close');
 	});
 
     $('.website-note').click(function (ev) {
         ev.stopPropagation();
         $('.website').removeClass('website-selected');
+        $('.website-note').text('Learn more');
     })
 
 	$('.extended').hide(); 
