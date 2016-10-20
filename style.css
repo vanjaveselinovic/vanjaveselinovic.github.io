@@ -184,8 +184,8 @@ a:hover {
     padding: 20px;
     width: 100%;
     max-width: 550px;
-    font-size: 0.75em;
-    border: 1px solid #2a72d5;
+    font-size: 1em;
+    border: 2px solid #2a72d5;
     background: rgba(246, 246, 246, 0.83);
     color: rgba(0,0,0,0.67);
     word-break: break-word;
@@ -725,6 +725,10 @@ a.pdf {
 
     #title-section {
         margin-top: -250px;
+    }
+
+    .box {
+        border-width: 2px 0px;
     }
 
     #websites {
