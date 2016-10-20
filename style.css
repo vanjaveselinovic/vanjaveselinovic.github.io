@@ -536,7 +536,14 @@ a.pdf {
 
 .website-more h2 {
     font-family: "Quicksand", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.25em;
+        line-height: 3em;
+
+}
+
+.website-more h2 a {
+    padding: 0.33em 1em;
+    border: 2px solid #FF7559;
 }
 
 .website:nth-child(1) .website-more h2 {
@@ -545,10 +552,12 @@ a.pdf {
 
 .website-more a {
     color: #FF7559;
+    text-decoration: none;
 }
 
 .website-more a:hover {
     color: #2a72d5;
+    border-color: #2a72d5;
 }
 
 .wm-gallery {
