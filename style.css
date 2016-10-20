@@ -66,6 +66,7 @@ a:hover {
 .github h2 {
     font-size: 1.4em !important;
     margin: 0;
+    line-height: unset !important;
     font-family: "Quicksand", sans-serif;
 }
 
