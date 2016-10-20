@@ -17,11 +17,11 @@ body {
 }
 
 a {
-    color: #00DEB4;
+    color: #2a72d5;
 }
 
 a:visited {
-    color: #00997D;
+    color: #1e59ab;
 }
 
 a:hover {
@@ -40,7 +40,7 @@ button {
 }
 
 button:hover {
-    background: #FF2B00;
+    background: #2a72d5;
 }
 
 button:active {
@@ -54,7 +54,7 @@ button:active {
 }
 
 .github:hover .icon {
-    fill: #FF2B00;
+    fill: #2a72d5;
 }
 
 .github h2 {
@@ -97,12 +97,12 @@ button:active {
 
 #header-bg {
     height: 250px;
-    background: white;
+    background: #2a72d5;
 }
 
 #masthead {
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
     height: 800px;
     margin: 0 auto;
     margin-top: -400px;
@@ -115,7 +115,7 @@ button:active {
 #title-section {
     text-align: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
     margin-top: -250px;
 }
@@ -160,7 +160,7 @@ button:active {
 
 .boxtitle {
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .paneltitle {
@@ -177,9 +177,9 @@ button:active {
 .box {
     padding: 20px;
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
     font-size: 0.75em;
-    border: 1px solid #00DEB4;
+    border: 1px solid #2a72d5;
     background: rgba(246, 246, 246, 0.83);
     color: rgba(0,0,0,0.67);
 }
@@ -336,7 +336,7 @@ button:active {
 }
 
 .website:nth-child(1)::after {
-    background: #00FFD0;
+    background: #2a72d5;
 }
 
 .website:nth-child(1) .website-logo {
@@ -370,7 +370,7 @@ button:active {
 }
 
 .website:nth-child(3)::after {
-    background: #FFD324;
+    background: #FF7559;
 }
 
 .website:nth-child(3) .website-logo {
@@ -387,7 +387,7 @@ button:active {
 }
 
 .website:nth-child(4)::after {
-    background: #00FFD0;
+    background: #2a72d5;
 }
 
 .website:nth-child(4) .website-logo {
@@ -519,7 +519,7 @@ button:active {
 }
 
 .website-more a:hover {
-    color: #FF2B00;
+    color: #2a72d5;
 }
 
 .wm-gallery {
@@ -561,8 +561,8 @@ button:active {
     flex: 1 1 auto;
     background: repeating-linear-gradient(
         to left,
-        #00FFD0 0px,
-        #00FFD0 350px,
+        #2a72d5 0px,
+        #2a72d5 350px,
         #FF7559 350px,
         #FF7559 700px,
         #FFD324 700px,
@@ -583,8 +583,8 @@ button:active {
     flex: 1 1 auto;
     background: repeating-linear-gradient(
         to right,
-        #00FFD0 0px,
-        #00FFD0 350px,
+        #2a72d5 0px,
+        #2a72d5 350px,
         #FF7559 350px,
         #FF7559 700px,
         #FFD324 700px,
@@ -673,7 +673,7 @@ button:active {
     opacity: 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     #header-bg {
         height: 200px;
     }

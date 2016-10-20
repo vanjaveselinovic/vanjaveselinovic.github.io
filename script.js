@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var colors = ['#FF7559', '#00FFD0', '#FFD324'];
+	var colors = ['#FF7559', '#2A72D5', '#CCCCCC'];
 	for (var i = 0; i < 20; i++) {
 		$('#particle-container').append('<div class="particle" style="top: '+Math.random()*100+'%; left: '+Math.random()*100+'%; color: '+colors[Math.floor(Math.random()*(3))]+';">v</div>');
 	}
