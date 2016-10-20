@@ -188,6 +188,7 @@ a:hover {
     border: 1px solid #2a72d5;
     background: rgba(246, 246, 246, 0.83);
     color: rgba(0,0,0,0.67);
+    word-break: break-word;
 }
 
 .box a {
