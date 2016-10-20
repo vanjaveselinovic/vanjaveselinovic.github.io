@@ -259,7 +259,7 @@ button:active {
 
 .website::after {
     content: "";
-    opacity: 0.67;
+    opacity: 0.8;
     top: 0;
     left: 0;
     bottom: 0;
@@ -564,9 +564,7 @@ button:active {
         #2a72d5 0px,
         #2a72d5 350px,
         #FF7559 350px,
-        #FF7559 700px,
-        #FFD324 700px,
-        #FFD324 1050px
+        #FF7559 700px
     );
     background-position: center;
 }
@@ -586,9 +584,7 @@ button:active {
         #2a72d5 0px,
         #2a72d5 350px,
         #FF7559 350px,
-        #FF7559 700px,
-        #FFD324 700px,
-        #FFD324 1050px
+        #FF7559 700px
     );
 
 }
@@ -723,6 +719,14 @@ button:active {
     .website:nth-child(4) {
         top: 75%;
         bottom: initial;
+    }
+
+    .website:nth-child(3)::after {
+        background: #2A72D5;
+    }
+
+    .website:nth-child(4)::after {
+        background: #FF7559;
     }
 
     .website-selected {
