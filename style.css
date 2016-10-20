@@ -28,7 +28,7 @@ a:hover {
     color: #FF7559;
 }
 
-button {
+.button {
     background: #FF7559;
     border: none;
     outline: none;
@@ -39,12 +39,18 @@ button {
     box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
 }
 
-button:hover {
+.button:hover {
     background: #2a72d5;
 }
 
-button:active {
+.button:active {
     box-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+.button:focus {
+    font-weight: bold;
+    background: #2A72D5;
+    color: #FF7559;
 }
 
 .github {
@@ -223,19 +229,42 @@ button:active {
     color: #FF7559;
 }
 
+.pdf-note {
+    margin-right: 1em;
+}
+
 .pdf {
     border: 2px solid #FF7559;
     background: white;
     color: #FF7559;
     padding: 1.5em 0.5em;
-    margin-top: 1em;
     box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.pdf {
+    color: #FF7559;
 }
 
 .pdf:hover {
     background: #FF7559;
     color: #eee;
+}
+
+.pdf:active {
+    color: #eee;
+}
+
+.button.pdf:focus {
+    background: #2A72D5;
+    border-color: #2A72D5;
+    color: #FF7559;
+}
+
+.pdf:focus:hover {
+    font-weight: initial;
 }
 
 .worktitle {
