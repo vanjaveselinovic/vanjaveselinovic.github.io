@@ -212,7 +212,7 @@ button:active {
 }
 
 #resume-button {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .resume-expanded {
@@ -221,6 +221,21 @@ button:active {
 
 .resume-subtitle {
     color: #FF7559;
+}
+
+.pdf {
+    border: 2px solid #FF7559;
+    background: white;
+    color: #FF7559;
+    padding: 1.5em 0.5em;
+    margin-top: 1em;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.pdf:hover {
+    background: #FF7559;
+    color: #eee;
 }
 
 .worktitle {
