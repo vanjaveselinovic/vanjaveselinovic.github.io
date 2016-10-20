@@ -609,9 +609,16 @@ button:active {
 
 .app-info {
     position: absolute;
-    bottom: 67px;
+    bottom: 50px;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.app-info .app-note {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .app-info .icon {
