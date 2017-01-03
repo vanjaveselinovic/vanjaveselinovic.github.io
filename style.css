@@ -276,13 +276,13 @@ a.pdf {
 
 #websites {
     width: 100%;
-    height: 80%;
+    height: 100%;
     position: relative;
 }
 
 .website {
     width: 50%;
-    height: 50%;
+    height: calc(100% / 3);
     float: left;
     position: absolute;
     transition: all 0.3s;
@@ -353,6 +353,11 @@ a.pdf {
     opacity: 0;
 }
 
+.website:nth-child(6):hover .website-logo {
+    opacity: 1;
+    background-image: url("images/website-commission-logo-dark.png");
+}
+
 .website:hover .website-note {
     opacity: 1;
 }
@@ -363,15 +368,15 @@ a.pdf {
 }
 
 .website:nth-child(1) .website-bg {
-    background-image: url("images/website-lander.png");
+    background-image: url("images/website-solarsystem.png");
 }
 
 .website:nth-child(1)::after {
-    background: #2a72d5;
+    background: #FF7559;
 }
 
 .website:nth-child(1) .website-logo {
-    background-image: url("images/website-lander-logo.png");
+    background-image: url("images/website-solarsystem-logo.png");
 }
 
 .website:nth-child(2) {
@@ -380,55 +385,96 @@ a.pdf {
 }
 
 .website:nth-child(2) .website-bg {
-    background-image: url("images/website-xmlspecgen.png");
+    background-image: url("images/website-lander.png");
 }
 
 .website:nth-child(2)::after {
-    background: #FF7559;
+    background: #2a72d5;
 }
 
 .website:nth-child(2) .website-logo {
-    background-image: url("images/website-xmlspecgen-logo.png");
+    background-image: url("images/website-lander-logo.png");
 }
 
 .website:nth-child(3) {
-    bottom: 0;
+    top: calc(100% / 3);
     left: 0;
 }
 
 .website:nth-child(3) .website-bg {
-    background-image: url("images/website-vanjav.png");
+    background-image: url("images/website-xmlspecgen.png");
 }
 
 .website:nth-child(3)::after {
-    background: #FF7559;
+    background: #2a72d5;
 }
 
 .website:nth-child(3) .website-logo {
-    background-image: url("images/website-vanjav-logo.png");
+    background-image: url("images/website-xmlspecgen-logo.png");
 }
 
 .website:nth-child(4) {
-    bottom: 0;
+    top: calc(100% / 3);
     right: 0;
 }
 
 .website:nth-child(4) .website-bg {
-    background-image: url("images/website-korranews.png");
+    background-image: url("images/website-vanjav.png");
 }
 
 .website:nth-child(4)::after {
-    background: #2a72d5;
+    background: #FF7559;
 }
 
 .website:nth-child(4) .website-logo {
+    background-image: url("images/website-vanjav-logo.png");
+}
+
+.website:nth-child(5) {
+    bottom: 0;
+    left: 0;
+}
+
+.website:nth-child(5) .website-bg {
+    background-image: url("images/website-korranews.png");
+}
+
+.website:nth-child(5)::after {
+    background: #FF7559;
+}
+
+.website:nth-child(5) .website-logo {
     background-image: url("images/website-korranews-logo.png");
+}
+
+.website:nth-child(6) {
+    bottom: 0;
+    right: 0;
+}
+
+.website:nth-child(6) .website-bg {
+    background: white;
+}
+
+.website:nth-child(6)::after {
+    background: #2a72d5;
+}
+
+.website:nth-child(6) .website-logo {
+    background-image: url("images/website-commission-logo.png");
 }
 
 .website-selected {
     width: 100%;
     height: 100%;
     z-index: 2;
+}
+
+.website:nth-child(3).website-selected {
+    top: 0;
+}
+.website:nth-child(4).website-selected {
+    top: 0;
 }
 
 .website-selected:hover {
@@ -520,6 +566,12 @@ a.pdf {
     overflow: auto;
 }
 
+.website:nth-child(6) .wm-info {
+    left: calc(50% + 1rem);
+    width: calc(100% - 2rem);
+    max-width: 500px;
+}
+
 .wm-info-top {
         text-align: center;
 }
@@ -572,19 +624,23 @@ a.pdf {
 }
 
 .website:nth-child(1) .wm-gallery {
-    background-image: url("images/website-lander.png");
+    background-image: url("images/website-solarsystem.png");
 }
 
 .website:nth-child(2) .wm-gallery {
+    background-image: url("images/website-lander.png");
+}
+
+.website:nth-child(3) .wm-gallery {
     background-image: url("images/website-xmlspecgen-alt.png");
     background-position: top left;
 }
 
-.website:nth-child(3) .wm-gallery {
+.website:nth-child(4) .wm-gallery {
     background-image: url("images/website-vanjav.png");
 }
 
-.website:nth-child(4) .wm-gallery {
+.website:nth-child(5) .wm-gallery {
     background-image: url("images/website-korranews.png");
 }
 
@@ -738,7 +794,7 @@ a.pdf {
 
     .website {
         width: 100%;
-        height: 25%;
+        height: calc(100% / 6);
         transition: unset;
     }
 
@@ -757,26 +813,36 @@ a.pdf {
     }
 
     .website:nth-child(2) {
-        top: 25%;
+        top: calc(100% / 6);
         bottom: initial;
     }
 
     .website:nth-child(3) {
-        top: 50%;
+        top: calc(100% / 3);
         bottom: initial;
     }
 
     .website:nth-child(4) {
-        top: 75%;
+        top: calc(100% / 2);
+        bottom: initial;
+    }
+
+    .website:nth-child(5) {
+        top: calc(2 * calc(100% / 3));
+        bottom: initial;
+    }
+
+    .website:nth-child(6) {
+        top: calc(100% - calc(100% / 6));
         bottom: initial;
     }
 
     .website:nth-child(3)::after {
-        background: #2A72D5;
+        background: #FF7559;
     }
 
     .website:nth-child(4)::after {
-        background: #FF7559;
+        background: #2A72D5;
     }
 
     .website-selected {
@@ -789,7 +855,7 @@ a.pdf {
         transition: unset;
     }
 
-    .wm-info {
+    .wm-info, .website:nth-child(6) .wm-info {
         top: 50%;
         left: calc(50%);
         transform: translate(-50%, -50%);
