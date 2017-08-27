@@ -275,17 +275,16 @@ a.pdf {
 }
 
 #websites {
-    width: 100%;
-    height: 100%;
-    position: relative;
+    overflow: hidden;
 }
 
 .website {
     width: 50%;
-    height: calc(100% / 3);
-    float: left;
-    position: absolute;
+    height: 250px;
     transition: all 0.3s;
+    display: inline-block;
+    float: left;
+    position: relative;
 }
 
 .website::after {
@@ -362,11 +361,6 @@ a.pdf {
     opacity: 1;
 }
 
-.website:nth-child(1) {
-    top: 0;
-    left: 0;
-}
-
 .website:nth-child(1) .website-bg {
     background-image: url("images/website-solarsystem.png");
 }
@@ -377,11 +371,6 @@ a.pdf {
 
 .website:nth-child(1) .website-logo {
     background-image: url("images/website-solarsystem-logo.png");
-}
-
-.website:nth-child(2) {
-    top: 0;
-    right: 0;
 }
 
 .website:nth-child(2) .website-bg {
@@ -396,11 +385,6 @@ a.pdf {
     background-image: url("images/website-lander-logo.png");
 }
 
-.website:nth-child(3) {
-    top: calc(100% / 3);
-    left: 0;
-}
-
 .website:nth-child(3) .website-bg {
     background-image: url("images/website-xmlspecgen.png");
 }
@@ -411,11 +395,6 @@ a.pdf {
 
 .website:nth-child(3) .website-logo {
     background-image: url("images/website-xmlspecgen-logo.png");
-}
-
-.website:nth-child(4) {
-    top: calc(100% / 3);
-    right: 0;
 }
 
 .website:nth-child(4) .website-bg {
@@ -430,11 +409,6 @@ a.pdf {
     background-image: url("images/website-vanjav-logo.png");
 }
 
-.website:nth-child(5) {
-    bottom: 0;
-    left: 0;
-}
-
 .website:nth-child(5) .website-bg {
     background-image: url("images/website-korranews.png");
 }
@@ -445,11 +419,6 @@ a.pdf {
 
 .website:nth-child(5) .website-logo {
     background-image: url("images/website-korranews-logo.png");
-}
-
-.website:nth-child(6) {
-    bottom: 0;
-    right: 0;
 }
 
 .website:nth-child(6) .website-bg {
@@ -465,59 +434,36 @@ a.pdf {
 }
 
 .website-selected {
-    width: 100%;
-    height: 100%;
     z-index: 2;
-}
-
-.website:nth-child(3).website-selected {
-    top: 0;
-}
-.website:nth-child(4).website-selected {
-    top: 0;
 }
 
 .website-selected:hover {
     cursor: default;
 }
 
-.website-selected:hover .website-bg {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-.website-selected .website-logo {
-    display: none;
-}
-
-.website-selected::after, .website-selected:hover::after {
-    background: #eee !important;
-    opacity: 1;
-}
-
-.website-selected:hover .website-logo {
-    opacity: 1;
-}
-
 .website-selected .website-note {
+    position: fixed;
     z-index: 3;
 }
 
 .website-more {
     opacity: 0;
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
-    transition: all 0.5s;
     pointer-events: none;
+    top: 0;
+    left: 0;
+    background: #f6f6f6;
 }
 
 .website-selected .website-more {
     pointer-events: initial;
 }
 
-.website-selected .website-more, .website-selected .website-note {
+.website-selected .website-more,
+.website-selected .website-note {
     opacity: 1;
 }
 
@@ -788,53 +734,12 @@ a.pdf {
         border-width: 2px 0px;
     }
 
-    #websites {
-        height: 100%;
-    }
-
     .website {
         width: 100%;
-        height: calc(100% / 6);
-        transition: unset;
-    }
-
-    .website::after {
-        transition: unset;
     }
 
     .website-logo {
         width: 33%;
-        transition: unset;
-    }
-
-    .website:nth-child(1) {
-        top: 0;
-        bottom: initial;
-    }
-
-    .website:nth-child(2) {
-        top: calc(100% / 6);
-        bottom: initial;
-    }
-
-    .website:nth-child(3) {
-        top: calc(100% / 3);
-        bottom: initial;
-    }
-
-    .website:nth-child(4) {
-        top: calc(100% / 2);
-        bottom: initial;
-    }
-
-    .website:nth-child(5) {
-        top: calc(2 * calc(100% / 3));
-        bottom: initial;
-    }
-
-    .website:nth-child(6) {
-        top: calc(100% - calc(100% / 6));
-        bottom: initial;
     }
 
     .website:nth-child(3)::after {
@@ -843,16 +748,6 @@ a.pdf {
 
     .website:nth-child(4)::after {
         background: #2A72D5;
-    }
-
-    .website-selected {
-        top: 0 !important;
-        bottom: 0 !important;
-        height: 100%;
-    }
-
-    .website-more {
-        transition: unset;
     }
 
     .wm-info, .website:nth-child(6) .wm-info {
