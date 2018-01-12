@@ -122,7 +122,7 @@ a:hover {
 #title-section {
     text-align: center;
     width: 100%;
-    max-width: 550px;
+    max-width: 400px;
     margin: 0 auto;
     margin-top: -250px;
 }
@@ -447,6 +447,7 @@ a.pdf {
     left: 0;
     background: #f6f6f6;
     display: none;
+    border: 2rem solid #FF7559;
 }
 
 .website-selected .website-more {
@@ -462,6 +463,7 @@ a.pdf {
 .wm-border {
     position: absolute;
     background: #FF7559;
+    display: none;
 }
 
 .wm-border-top {
@@ -495,7 +497,7 @@ a.pdf {
 .wm-info {
     position: absolute;
     top: 50%;
-    left: calc(25% + 1rem);
+    left: 25%;
     transform: translate(-50%, -50%);
     width: calc(50% - 2rem);
     max-width: 300px;
@@ -552,34 +554,34 @@ a.pdf {
 }
 
 .wm-gallery {
-    width: calc(50% - 2rem);
-    height: calc(100% - 4rem);
+    width: 50%;
+    height: 100%;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 0;
+    right: 0;
     background-size: cover;
     background-position: top center;
 }
 
 .website:nth-child(1) .wm-gallery {
-    background-image: url("images/website-solarsystem.png");
+    background-image: url("images/website-korranews.png");
 }
 
 .website:nth-child(2) .wm-gallery {
-    background-image: url("images/website-lander.png");
+    background-image: url("images/website-solarsystem.png");
 }
 
 .website:nth-child(3) .wm-gallery {
+    background-image: url("images/website-lander.png");
+}
+
+.website:nth-child(4) .wm-gallery {
     background-image: url("images/website-xmlspecgen-alt.png");
     background-position: top left;
 }
 
-.website:nth-child(4) .wm-gallery {
-    background-image: url("images/website-vanjav.png");
-}
-
 .website:nth-child(5) .wm-gallery {
-    background-image: url("images/website-korranews.png");
+    background-image: url("images/website-vanjav.png");
 }
 
 #apps {
@@ -742,12 +744,23 @@ a.pdf {
         background: #2A72D5;
     }
 
+    .website-more {
+        display: none;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .website-selected .website-more {
+        pointer-events: initial;
+        display: flex;
+    }
+
     .wm-info, .website:nth-child(6) .wm-info {
-        top: 50%;
-        left: calc(50%);
-        transform: translate(-50%, -50%);
-        width: calc(100% - 2rem);
-        max-height: calc(100% - 4rem);
+        max-width: unset;
+        width: unset;
+        transform: unset;
+        position: unset;
+        padding: 2rem;
     }
 
     .wm-info p {
@@ -755,6 +768,8 @@ a.pdf {
     }
 
     .wm-gallery {
-        display: none;
+        position: unset;
+        width: 100%;
+        flex: 1;
     }
  }
