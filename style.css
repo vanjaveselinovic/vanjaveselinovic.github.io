@@ -634,23 +634,26 @@ a.pdf {
     position: relative;
 }
 
+/*
 .app:nth-child(1) {
     background-image: url("images/app-rlp.png");
 }
+*/
 
 .app:nth-child(2) {
-    background-image: url("images/app-tp.png");
+    /*background-image: url("images/app-tp.png");*/
+    background: white;
 }
 
 .app-info {
     position: absolute;
-    bottom: 50px;
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
 .app-info .app-note {
-    color: rgba(255,255,255,0.5);
+    color: rgba(0,0,0,0.5);
     font-size: 0.7em;
     text-transform: uppercase;
     font-weight: bold;
@@ -689,7 +692,7 @@ a.pdf {
 }
 
 .app:nth-child(2) .app-logo {
-    background-image: url("images/app-tp-logo.png");
+    background-image: url("images/sproots-logo.png");
     width: 70%;
     height: 350px;
 }
@@ -709,6 +712,12 @@ a.pdf {
     display: block;
     position: relative;
     opacity: 0;
+}
+
+iframe {
+    border: unset;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 550px) {
